@@ -15,7 +15,9 @@ class _HomeState extends State<Home> {
         child: Column(
           children: [
             TextButton.icon(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/location');
+                },
                 icon: const Icon(Icons.edit_location),
                 label: const Text('Edit location')
             )
